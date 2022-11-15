@@ -198,3 +198,4 @@ gaps bottom 0px
 ## window configuration: theming
 for_window [class="Google-chrome"] border pixel 0
 for_window [class="Alacritty"] border pixel 0 # TODO(ollie): show something else ?
+for_window [class="jetbrains-goland"] border pixel 0
