@@ -1,5 +1,5 @@
 [Unit]
-Description=Polybar status bar
+Description=Picom compositor for X windows
 
 [Service]
 ExecStart=/usr/bin/picom
