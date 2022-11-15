@@ -15,7 +15,7 @@ fi
 
 ## BASIC SHELL
 export EDITOR=vim
-alias ls='ls --color'
+alias ls='ls --color -G'
 
 ## LOCAL SECRETS
 if [ -f ~/.secretsrc ]; then
