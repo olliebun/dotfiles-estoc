@@ -1,0 +1,4 @@
+#!/bin/bash
+set -ex
+systemctl --user restart polybar@main.service polybar@secondary.service picom.service
+~/.fehbg

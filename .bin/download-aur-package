@@ -1,0 +1,22 @@
+#!/usr/bin/env sh
+set -e
+if [ "$#" -ne 1 ]; then
+  echo "usage: download-aur-package PACKAGE" >&2
+  exit 1
+fi
+
+package="$1"
+target="$HOME/code/aur/$package"
+
+if [ -d "$target" ]; then
+  echo "$target exists" >&1
+  exit 1
+fi
+
+tempdir="$(mktemp -d)"
+cd "$tempdir"
+
+http --follow https://aur.archlinux.org/cgit/aur.git/snapshot/"$package".tar.gz > "$package".tar.gz
+tar -xf "$package".tar.gz
+mv "$package" "$target"
+echo "$target"

@@ -1,0 +1,3 @@
+#!/bin/sh
+# Prevents bypassing the screenlocker by switching terminals.
+exec /usr/bin/Xorg -nolisten tcp "$@" vt$XDG_VTNR
