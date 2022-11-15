@@ -15,6 +15,7 @@ fi
 
 ## BASIC SHELL
 export EDITOR=vim
+alias ls='ls --color'
 
 ## LOCAL SECRETS
 if [ -f ~/.secretsrc ]; then
@@ -23,6 +24,10 @@ fi
 
 ## SSH
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+## AWS
+export AWS_VAULT_BACKEND=pass
+export AWS_DEFAULT_REGION=ap-southeast-2
 
 ## GITHUB
 export GITHUB_USERNAME=olliebun
