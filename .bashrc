@@ -1,3 +1,10 @@
+## PS1
+if ! [ -z "$AWS_VAULT" ]; then
+  export PS1="aws:$AWS_VAULT \$ "
+else
+  export PS1='[\u@\h \W]\$ '
+fi
+
 ## DOTFILES
 alias dgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
