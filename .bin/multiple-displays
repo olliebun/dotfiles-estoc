@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+set -ex
+
+xrandr --output eDP-1 --auto --output DP-2-3 --right-of eDP-1 --auto --scale 2
+systemctl --user start polybar@secondary.service
+~/.fehbg

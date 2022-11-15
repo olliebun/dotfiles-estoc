@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -ex
+systemctl --user stop polybar@secondary.service
+xrandr --output eDP-1 --auto --output DP-2-3 --off
+~/.fehbg
