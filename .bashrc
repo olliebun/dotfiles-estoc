@@ -47,16 +47,6 @@ find-file() {
 # install from https://aur.archlinux.org/packages/asdf-vm
 . /opt/asdf-vm/asdf.sh
 
-## FLIP
-# todo: these may no longer be needed.
-flip-bee-test-vars() {
-  set -x
-  export DYNAMODB_ENDPOINT="http://${MACHINE_NAME}.local:9832"
-  export PGHOST=${MACHINE_NAME}.local
-  export PGPORT=9932
-  export PGUSER=postgres
-  export PGPASSWORD=postgrespassword
-  set +x
-}
-
-
+if [ -f ~/.flip.env ]; then
+  . ~/.flip.env
+fi
