@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -ex
-systemctl --user stop polybar@main.service polybar@secondary.service
+systemctl --user stop polybar@main polybar@secondary
 xrandr --output eDP-1 --auto --output DP-2-3 --off
-systemctl --user start polybar@single.service
+if ! systemctl --user status picom &>/dev/null; then
+  systemctl --user start picom
+fi
+systemctl --user start polybar@single
 ~/.fehbg
