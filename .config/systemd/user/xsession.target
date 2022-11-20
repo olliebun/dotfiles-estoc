@@ -2,4 +2,5 @@
 [Unit]
 Description=xsession for starting other user units, exec'd during i3wm startup
 BindsTo=graphical-session.target
+Wants=dunst.service
 Wants=polybar@single.service
