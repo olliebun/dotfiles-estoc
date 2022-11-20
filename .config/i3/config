@@ -207,3 +207,5 @@ for_window [class="obsidian"] border pixel 0
 # ensure that Jetbrains IDE dialogs retain focus and have dynamic window size
 # from https://www.reddit.com/r/i3wm/comments/8gh4c0/working_fix_for_focusing_intellij_popups
 for_window [class="^jetbrains-.+"][window_type=dialog] focus
+
+exec systemctl --user start xsession.target
