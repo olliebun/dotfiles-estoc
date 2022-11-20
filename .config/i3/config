@@ -206,6 +206,7 @@ for_window [class="Google-chrome"] border pixel 0
 for_window [class="Alacritty"] border pixel 0 # TODO(ollie): show something else ?
 for_window [class="jetbrains-goland"] border pixel 0
 for_window [class="Slack"] border pixel 0
+for_window [class="obsidian"] border pixel 0
 
 # ensure that Jetbrains IDE dialogs retain focus and have dynamic window size
 # from https://www.reddit.com/r/i3wm/comments/8gh4c0/working_fix_for_focusing_intellij_popups
