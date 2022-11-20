@@ -37,6 +37,7 @@ export PATH=$PATH:~/.bin
 
 ## ARCH
 alias pacman="sudo pacman"
+alias brillo="sudo brillo"
 
 ## SHELL HELPERS
 find-file() {
