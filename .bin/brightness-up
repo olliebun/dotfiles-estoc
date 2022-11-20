@@ -1,0 +1,12 @@
+#!/bin/bash
+set -eu
+if [ "$#" -ne 1 ]; then
+  echo "usage: brightness-up VALUE"
+fi
+sudo brillo -A "$1"
+notify-send \
+  -t 500 \
+  -u low \
+  -a brightness \
+  -h int:value:"$(brillo -G)" \
+  "brightness +$1"

@@ -41,8 +41,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use brillo to adjust display brightness
-bindsym XF86MonBrightnessUp exec sudo brillo -A 10
-bindsym XF86MonBrightnessDown exec sudo brillo -U 10
+bindsym XF86MonBrightnessUp exec brightness-up 10
+bindsym XF86MonBrightnessDown exec brightness-down 10
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
