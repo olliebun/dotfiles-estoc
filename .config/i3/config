@@ -192,9 +192,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-gaps inner 5px
-gaps left 2px
-gaps right 2px
+smart_gaps on
+gaps inner 4px
+gaps left 1px
+gaps right 1px
+gaps outer 0px
 gaps bottom 0px
 #gaps outer current plus 5
 #gaps outer current toggle 60
