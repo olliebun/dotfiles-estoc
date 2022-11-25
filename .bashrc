@@ -25,6 +25,9 @@ fi
 ## SSH
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+## GIT
+alias gbd="git branch --merged | grep -v \* | xargs git branch -d"
+
 ## AWS
 export AWS_VAULT_BACKEND=pass
 export AWS_DEFAULT_REGION=ap-southeast-2
