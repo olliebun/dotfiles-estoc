@@ -17,12 +17,7 @@
 	track = "push -u origin "
 [branch]
 	autosetuprebase = always
-[branch "develop"]
-	rebase = true
-[branch "V2-develop"]
-	rebase = true
-[branch "master"]
-	rebase = true
+[branch "main"]
 [remote "origin"]
 	prune = true
 	tagOpt = --tags
