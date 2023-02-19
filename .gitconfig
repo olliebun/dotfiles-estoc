@@ -39,8 +39,8 @@
 	suffix = -rc
 [credential]
 	helper = store
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+[url "ssh://git@github.com/flipgroup"]
+	insteadOf = https://github.com/flipgroup
 [pager]
 	branch = false
 [init]
