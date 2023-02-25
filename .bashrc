@@ -19,7 +19,7 @@ if [ -f /usr/share/bash-complete-alias/complete_alias ]; then
 fi
 
 ## BASIC SHELL
-export EDITOR=vim
+export EDITOR=nvim
 alias ls='ls --color -G'
 
 ## LOCAL SECRETS
