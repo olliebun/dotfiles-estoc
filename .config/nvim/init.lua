@@ -50,6 +50,7 @@ lazy.opts = {}
 lazy.setup({
 	{'folke/tokyonight.nvim'},
 	{'nvim-lualine/lualine.nvim'}, -- Status line
+	{'romgrk/barbar.nvim', dependencies = 'nvim-tree/nvim-web-devicons'}, -- tabline
 	{'ray-x/guihua.lua'},
   --- https://github.com/ray-x/go.nvim#lazynvim
 	{'ray-x/guihua.lua'},
@@ -107,6 +108,7 @@ local lsp = require('lsp-zero').preset({
   set_lsp_keymaps = true,
   manage_nvim_cmp = true,
   suggest_lsp_servers = true,
+  setup_servers_on_start = true,
 })
 
 lsp.nvim_workspace()
