@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -ex
+if [ -z "$SECONDARY" ]; then
+	SECONDARY="DP-2-4"
+fi
 systemctl --user stop polybar@single.service
-xrandr --output eDP-1 --auto --output DP-2-3 --right-of eDP-1 --auto --scale 1
+xrandr --output eDP-1 --auto --output "$SECONDARY" --left-of eDP-1 --auto --scale 1
 systemctl --user start polybar@main.service polybar@secondary.service
 ~/.fehbg
