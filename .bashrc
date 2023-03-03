@@ -38,6 +38,10 @@ gopkg_testcov() {
   go test -cover "$1" -coverprofile=cover.out && go tool cover -html=cover.out
 }
 
+gogrep() {
+  grep -R --binary-files=without-match "$1" * | grep -v vendor | grep -v 'context.TODO()' 
+}
+
 ## AWS
 export AWS_VAULT_BACKEND=pass
 export AWS_DEFAULT_REGION=ap-southeast-2
