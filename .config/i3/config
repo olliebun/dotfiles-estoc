@@ -123,8 +123,8 @@ set $ws4 "4"
 set $ws5 "5:vim"
 set $ws6 "6"
 set $ws7 "7:scratch"
-set $ws8 "8:term"
-set $ws9 "9:go"
+set $ws8 "8:1password"
+set $ws9 "9:ws"
 set $ws10 "10"
 
 # switch to workspace
