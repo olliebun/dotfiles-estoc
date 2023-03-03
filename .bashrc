@@ -52,6 +52,11 @@ export PATH=$PATH:~/.bin
 alias pacman="sudo pacman"
 alias brillo="sudo brillo"
 
+## VIM
+if which nvim &>/dev/null; then
+	alias vim=nvim
+fi
+
 ## SHELL HELPERS
 find-file() {
   find / -name "$1" 2>/dev/null
