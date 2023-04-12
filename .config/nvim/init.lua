@@ -16,8 +16,10 @@ vim.keymap.set({ 'n', 'x' }, 'cp', '"+y')
 vim.keymap.set({ 'n', 'x' }, 'cv', '"+p')
 -- \a select all text in current buffer
 vim.keymap.set('n', '<leader>a', ':keepjumps normal! ggVG<cr>')
--- \+n toggle line numbers
+-- \n toggle line numbers
 vim.keymap.set('n', '<leader>n', ':set nu!<cr>')
+-- \t toggle nvim tree
+vim.keymap.set('n', '<leader>t', ':NvimTreeToggle<cr>')
 
 -- lazy.nvim
 local lazy = {}
