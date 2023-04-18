@@ -1,4 +1,13 @@
-Xft.dpi: 200
+! Laptop
+!Xft.dpi: 180
+
+! Home Office LG External
+Xft.dpi: 180
+! Dual
+!Xft.dpi: 140
+
+! Office
+!Xft.dpi: 200
 
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault

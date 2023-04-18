@@ -1,5 +1,0 @@
-[Unit]
-Description="Polybar status bar (%i)"
-
-[Service]
-ExecStart=/usr/bin/polybar %i
