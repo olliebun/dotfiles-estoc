@@ -1,0 +1,15 @@
+#
+# wm independent hotkeys
+#
+
+ctrl + alt + e
+  rofi -show emoji
+
+ctrl + alt + p
+  screenshotmenu
+
+XF86BrightnessUp
+  brightness-up 10
+
+XF86BrightnessDown
+  brightness-down 10

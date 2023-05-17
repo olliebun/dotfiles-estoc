@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple X hotkey daemon
+PartOf=graphical-session.target
+
+[Service]
+Restart=always
+ExecStart=/bin/bash -c "PATH=/home/oliver/.local/bin:$PATH /usr/bin/sxhkd"
+
+[Install]
+WantedBy=xsession.target
