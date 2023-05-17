@@ -1,0 +1,12 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+chosen=$(printf "Single\nOffice\nCancel" | rofi -dmenu -i)
+
+case "$chosen" in
+  "Single") ~/.screenlayout/single.sh ;;
+  "Office") ~/.screenlayout/office-triple.sh ;;
+  "Cancel") exit 0 ;;
+  *) exit 1 ;;
+esac
+
