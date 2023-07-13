@@ -5,7 +5,7 @@ chosen=$(printf "Single\nOffice\nCancel" | rofi -dmenu -i)
 
 case "$chosen" in
   "Single") ~/.screenlayout/single.sh ;;
-  "Office") ~/.screenlayout/office-triple.sh ;;
+  "Office") ~/.screenlayout/office.sh ;;
   "Cancel") exit 0 ;;
   *) exit 1 ;;
 esac
