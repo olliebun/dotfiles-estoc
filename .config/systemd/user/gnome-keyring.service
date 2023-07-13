@@ -1,0 +1,10 @@
+[Unit]
+Description=gnome-keyring daemon
+PartOf=graphical-session.target
+
+[Service]
+Restart=always
+ExecStart=/usr/bin/gnome-keyring-daemon --foreground --start
+
+[Install]
+WantedBy=xsession.target
