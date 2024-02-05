@@ -1,11 +1,12 @@
 #!/bin/bash
 set -Eeuo pipefail
 
-chosen=$(printf "Single\nOffice\nCancel" | rofi -dmenu -i)
+chosen=$(printf "Single\nOffice\nOffice near Window\nCancel" | rofi -dmenu -i)
 
 case "$chosen" in
   "Single") ~/.screenlayout/single.sh ;;
   "Office") ~/.screenlayout/office.sh ;;
+  "Office near Window") ~/.screenlayout/office-near-window.sh ;;
   "Cancel") exit 0 ;;
   *) exit 1 ;;
 esac
